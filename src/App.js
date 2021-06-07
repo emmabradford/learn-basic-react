@@ -3,6 +3,8 @@ import './App.css';
 import Amigo from './components/Amigo';
 import Button from './components/Button';
 import Hover from './components/Hover';
+import Copy from './components/Copy';
+
 function App() {
     return (
     <div className="App">
@@ -10,6 +12,7 @@ function App() {
     <Amigo />
     <Button />
     <Hover />
+    <Copy />
     </div>
   );
 }
