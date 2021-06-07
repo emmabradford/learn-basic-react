@@ -9,7 +9,7 @@ class Amigo extends React.Component
     render()
     {
         return (
-            <p> Numero Uno Amigo: {this.state.name} </p>
+            <p> Numero Uno Amigo: {this.state.name}. he is {this.state.age} </p>
         )
     }
 }
