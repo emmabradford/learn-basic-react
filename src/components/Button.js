@@ -2,8 +2,8 @@ import React from 'react';
 
 class Button extends React.Component
 {
-    handleClick(e){
-        console.log(e.target);
+    handleClick = (e) => {
+        console.log('clickity click click');
     }
     render()
     {

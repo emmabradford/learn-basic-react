@@ -8,7 +8,7 @@ import Copy from './components/Copy';
 function App() {
     return (
     <div className="App">
-    <h1>Holla Amigos</h1>
+    <h1>Hola Amigos</h1>
     <Amigo />
     <Button />
     <Hover />
