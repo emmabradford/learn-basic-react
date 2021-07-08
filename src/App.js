@@ -12,6 +12,7 @@ function App() {
     <h1>Hola Amigos</h1>
     <Amigo />
     <Friendo name="Lan Zhan" age="30" instrament="wangji"/>
+    <Friendo name="Wei Ying" age="30" instrament="chenqing" />
     <Button />
     <Hover />
     <Copy />

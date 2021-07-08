@@ -3,11 +3,12 @@ import React from 'react';
 class Friendo extends React.Component
 {
     render(){
-        console.log(this.props);        return(
+        const {name, age, instrament} = this.props;
+        return(
             <div className="friendo">
-                <div>Name: Lan Zhan</div>
-                <div>Age: 30</div>
-                <div>instrament: wangji</div>
+                <div>Name: {name}</div>
+                <div>Age: {age}</div>
+                <div>instrament: {instrament}</div>
             </div>
         )
     }
