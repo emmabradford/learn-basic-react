@@ -5,19 +5,30 @@ import Button from './components/Button';
 import Hover from './components/Hover';
 import Copy from './components/Copy';
 import Friendo from './components/Friendo';
+import react, {Component} from 'react';
 
-function App() {
+class App extends Component {
+  state = {
+    friendo :[
+      {name: "Lan Zhan", age: "30", weapon: "bichen", id: 1},
+      {name: "Wei Ying", age: "30", weapon: "suibian", id: 2}, 
+      {name: "Lan Xichen", age: "35", weapon: "shouyue", id: 3},
+      {name: "Meng Yao", age: "32", weapon: "hensheng", id: 4}
+    ]
+  }  
+
+  render(){
     return (
-    <div className="App">
-    <h1>Hola Amigos</h1>
-    <Amigo />
-    <Friendo name="Lan Zhan" age="30" instrament="wangji"/>
-    <Friendo name="Wei Ying" age="30" instrament="chenqing" />
-    <Button />
-    <Hover />
-    <Copy />
-    </div>
-  );
+      <div className="App">
+        <h1>Hola Amigos</h1>
+        <Amigo />
+        <Friendo friendo={this.state.friendo}/>
+        <Button />
+        <Hover />
+        <Copy />
+      </div>
+    );
+  }
 }
 
 export default App;

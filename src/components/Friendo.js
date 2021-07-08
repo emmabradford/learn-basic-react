@@ -3,12 +3,19 @@ import React from 'react';
 class Friendo extends React.Component
 {
     render(){
-        const {name, age, instrament} = this.props;
+        const {friendo} = this.props;
+        const friendoList = friendo.map(fernd => {
+            return(
+                <div className="friendo" key={friendo.id}>
+                    <div>Name: {fernd.name}</div>
+                    <div>Age: {fernd.age}</div>
+                    <div>Weapon: {fernd.weapon}</div>
+                </div>
+            )
+        })
         return(
-            <div className="friendo">
-                <div>Name: {name}</div>
-                <div>Age: {age}</div>
-                <div>instrament: {instrament}</div>
+            <div className="firendo-list">
+                {friendoList}
             </div>
         )
     }
