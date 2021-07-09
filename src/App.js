@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Amigo from './components/Amigo';
 import Button from './components/Button';
@@ -6,6 +5,7 @@ import Hover from './components/Hover';
 import Copy from './components/Copy';
 import Friendo from './components/Friendo';
 import react, {Component} from 'react';
+import AddFernd from './components/AddFernd';
 
 class App extends Component {
   state = {
@@ -26,6 +26,7 @@ class App extends Component {
         <Button />
         <Hover />
         <Copy />
+        <AddFernd />
       </div>
     );
   }

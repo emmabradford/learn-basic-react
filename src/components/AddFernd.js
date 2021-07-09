@@ -21,7 +21,7 @@ class AddFernd extends Component {
     render(){
         return(
             <div>
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <label htmlFor="name">Name:</label>
                     <input type="text" id="name" onChange={this.handleChange} />
                     <label htmlFor="age">Age:</label>
@@ -34,3 +34,5 @@ class AddFernd extends Component {
         )
     }
 }
+
+export default AddFernd;
