@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Friendo = ({friendo}) =>
+const Friendo = ({friendo, deleteFriendo}) =>
 {    
     return(
         <div className="firendo-list">
@@ -11,6 +11,7 @@ const Friendo = ({friendo}) =>
                             <div>Name: {fernd.name}</div>
                             <div>Age: {fernd.age}</div>
                             <div>Weapon: {fernd.weapon}</div>
+                            <button onClick={() => {deleteFriendo(fernd.id)}}> Delete Friend</button>
                         </div>
                     ) : null;
                 })

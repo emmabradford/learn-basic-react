@@ -25,12 +25,21 @@ class App extends Component {
     })
   }
 
+  deleteFriendo = (id) => {
+    let friendos = this.state.friendo.filter(fernd => {
+      return fernd.id !== id
+    });
+    this.setState({
+      friendo: friendos
+    })
+  }
+
   render(){
     return (
       <div className="App">
         <h1>Hola Amigos</h1>
         <Amigo />
-        <Friendo friendo={this.state.friendo}/>
+        <Friendo deleteFriendo={this.deleteFriendo} friendo={this.state.friendo}/>
         <Button />
         <Hover />
         <Copy />
