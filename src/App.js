@@ -17,6 +17,14 @@ class App extends Component {
     ]
   }  
 
+  addFriendo = (firendo) =>{
+    firendo.id = Math.random();
+    let fernds = [...this.state.friendo, firendo];
+    this.setState({
+      friendo: fernds
+    })
+  }
+
   render(){
     return (
       <div className="App">
@@ -26,7 +34,7 @@ class App extends Component {
         <Button />
         <Hover />
         <Copy />
-        <AddFernd />
+        <AddFernd addFriendo={this.addFriendo} />
       </div>
     );
   }
