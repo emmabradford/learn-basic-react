@@ -10,10 +10,10 @@ import AddFernd from './components/AddFernd';
 class App extends Component {
   state = {
     friendo :[
-      {name: "Lan Zhan", age: 30, weapon: "bichen", id: 1},
-      {name: "Wei Ying", age: 30, weapon: "suibian", id: 2}, 
-      {name: "Lan Xichen", age: 35, weapon: "shouyue", id: 3},
-      {name: "Meng Yao", age: 32, weapon: "hensheng", id: 4}
+      { name: "Lan Zhan", age: 30, weapon: "bichen", id: 1 },
+      { name: "Wei Ying", age: 30, weapon: "suibian", id: 2 }, 
+      { name: "Lan Xichen", age: 35, weapon: "shouyue", id: 3 },
+      { name: "Meng Yao", age: 32, weapon: "hensheng", id: 4 } 
     ]
   }  
 
@@ -32,6 +32,10 @@ class App extends Component {
     this.setState({
       friendo: friendos
     })
+  }
+
+  componentDidMount(){
+    console.log('componendt mounted');
   }
 
   render(){
