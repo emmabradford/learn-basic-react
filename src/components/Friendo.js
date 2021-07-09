@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Friendo.css';
 const Friendo = ({friendo, deleteFriendo}) =>
 {    
     return(
