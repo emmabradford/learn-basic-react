@@ -4,11 +4,14 @@ import Button from './components/Button';
 import Hover from './components/Hover';
 import Copy from './components/Copy';
 import Friendo from './components/Friendo';
-import react, {Component} from 'react';
+import React, {Component} from 'react';
 import AddFernd from './components/AddFernd';
+import Navbar from './components/Navbar';
+import { BrowserRouter, Route } from 'react-router-dom'
+import Home from './components/Home';
 
 class App extends Component {
-  state = {
+ state = {
     friendo :[
       { name: "Lan Zhan", age: 30, weapon: "bichen", id: 1 },
       { name: "Wei Ying", age: 30, weapon: "suibian", id: 2 }, 
@@ -45,15 +48,12 @@ class App extends Component {
 
   render(){
     return (
-      <div className="App">
-        <h1>Hola Amigos</h1>
-        <Amigo />
-        <Friendo deleteFriendo={this.deleteFriendo} friendo={this.state.friendo}/>
-        <Button />
-        <Hover />
-        <Copy />
-        <AddFernd addFriendo={this.addFriendo} />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar/>
+          <Route path='/' component={Home} />         
+        </div>
+      </BrowserRouter>
     );
   }
 }
