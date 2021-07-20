@@ -1,11 +1,11 @@
 import './App.css';
-import Amigo from './components/Amigo';
-import Button from './components/Button';
-import Hover from './components/Hover';
-import Copy from './components/Copy';
-import Friendo from './components/Friendo';
+//import Amigo from './components/Amigo';
+//import Button from './components/Button';
+//import Hover from './components/Hover';
+//import Copy from './components/Copy';
+//import Friendo from './components/Friendo';
 import React, {Component} from 'react';
-import AddFernd from './components/AddFernd';
+//import AddFernd from './components/AddFernd';
 import Navbar from './components/Navbar';
 import { BrowserRouter, Route } from 'react-router-dom'
 import Home from './components/Home';
